@@ -105,3 +105,20 @@ fi
 
 
 cut -c 3
+
+# question 10
+# variables 3rd character
+
+read a
+echo "$a" | cut -c 3
+
+
+# question 11
+# Display the 2nd and 7th character from each line of text.
+
+cut -c 2,7
+
+# question 12
+# Display a range of characters starting at the 2nd position of a string and ending at the 7th position (both positions included).
+
+cut -c 2-7
