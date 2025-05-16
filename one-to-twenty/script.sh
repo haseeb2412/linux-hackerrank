@@ -57,3 +57,44 @@ fi
 if [ "$X" -lt "$Y" ]; then
     echo "X is less than Y"
 fi
+
+# question 07
+# Read in one character from STDIN.
+# If the character is 'Y' or 'y' display "YES".
+# If the character is 'N' or 'n' display "NO".
+# No other character will be provided as input.
+
+read a
+
+if [[ "$a" == 'y' || "$a" == 'Y' ]]; then
+    echo "YES"
+fi
+
+if [[ "$a" == 'n' || "$a" == 'N' ]]; then
+    echo "NO"
+fi
+
+# question 08
+# Given three integers (X, Y, and Z) representing the three sides of a triangle, identify whether the triangle is scalene, isosceles, or equilateral.
+
+# If all three sides are equal, output EQUILATERAL.
+# Otherwise, if any two sides are equal, output ISOSCELES.
+# Otherwise, output SCALENE.
+
+
+read a
+read b
+read c
+
+if [[ "$a" == "$b" && "$b" == "$c" && "$a" == "$c" ]]; then
+    echo "EQUILATERAL"
+fi 
+
+if [[ "$a" = "$b" && "$b" != "$c" ]] || [[ "$b" = "$c" && "$a" != "$b" ]] || [[ "$a" = "$c" && "$b" != "$a" ]]; then
+    echo "ISOSCELES"
+fi
+
+
+if [[ "$a" != "$b" && "$b" != "$c" && "$a" != "$c" ]]; then
+    echo "SCALENE"
+fi
