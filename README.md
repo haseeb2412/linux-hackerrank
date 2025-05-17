@@ -38,7 +38,7 @@ This is a simple bash script that prompts the user for input and checks if the i
 
    ```
    Do you want to continue? (Y/y): y
-   You chose Yes
+   You chose Yes / yes
    ```
 
 ## Tip
