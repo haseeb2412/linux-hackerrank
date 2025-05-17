@@ -105,3 +105,14 @@ fi
 
 
 cut -c 3
+
+
+# quesiton 10
+# Display the first four characters from each line of text.
+
+cut -c 0-4
+
+# question 11
+# Given a tab delimited file with several columns (tsv format) print the first three fields.
+
+cut -f 1-3
