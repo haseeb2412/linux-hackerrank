@@ -113,6 +113,16 @@ cut -c 3
 cut -c 0-4
 
 # question 11
-# Given a tab delimited file with several columns (tsv format) print the first three fields.
+# /Given a tab delimited file with several columns (tsv format) print the first three fields.
 
 cut -f 1-3
+
+# question 12
+# Print the characters from thirteenth position to the end.
+
+cut -c 13-
+
+# question 13
+# Given a sentence, identify and display its fourth word. Assume that the space (' ') is the only delimiter between
+
+cut -d '' -f 4
