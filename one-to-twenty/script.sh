@@ -131,3 +131,8 @@ cut -d '' -f 4
 # Given a sentence, identify and display its first three words. Assume that the space (' ') is the only delimiter between words.
 
 cut -d ' ' -f 0-3
+
+# question 15 
+# Given a tab delimited file with several columns (tsv format) print the fields from second fields to last field.
+
+cut -f 2-
