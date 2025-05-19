@@ -148,3 +148,8 @@ head -n 20
 # Display the first  characters of an input file.
 
 head -c 20
+
+# question 18 ( text processing in linux the middle of the text file)
+# Display the lines (from line number 12 to 22, both inclusive) of a given text file.
+
+sed -n "12,22p"

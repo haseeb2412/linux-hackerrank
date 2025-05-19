@@ -4,6 +4,39 @@
 
 This is a simple bash script that prompts the user for input and checks if the input is either `Y` or `y`. It can be used as a basic example of conditional input handling in shell scripting.
 
+
+## 📘 Basic Tool Usage
+
+### 🔹 `head` and `tail`
+**Use when** you want the first or last few lines of a file.
+
+Examples:
+
+```bash
+head -n 10 file.txt     # First 10 lines
+tail -n 5 file.txt      # Last 5 lines
+🔹 cut
+Use when you want to extract columns or specific characters from each line.
+
+Examples:
+
+cut -d',' -f2 file.csv  # Extract 2nd column from a CSV
+cut -c1-5 file.txt      # Extract first 5 characters of each line
+🔹 sed
+Use when you want to filter or replace text based on patterns or line numbers.
+
+Examples:
+
+sed -n '12,22p' file.txt          # Show lines 12 to 22
+sed 's/old/new/g' file.txt        # Replace all occurrences of 'old' with 'new'
+🔹 awk
+Use when you need advanced filtering, column selection, or condition-based processing.
+
+Examples:
+
+awk '{print $1, $3}' file.txt          # Print 1st and 3rd columns
+awk '$2 > 100 {print $1}' file.txt     # Print 1st column if 2nd column > 100
+
 ## File
 
 * `myscript.sh` — The main shell script.
