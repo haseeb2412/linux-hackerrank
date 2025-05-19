@@ -153,3 +153,10 @@ head -c 20
 # Display the lines (from line number 12 to 22, both inclusive) of a given text file.
 
 sed -n "12,22p"
+
+
+# question 19( text processing tail-01 )
+# In this challenge, we practice using the tail command to display the last  lines of a text file.
+# Display the last  lines of an input file.
+
+tail -n 20
