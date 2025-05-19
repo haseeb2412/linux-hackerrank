@@ -142,3 +142,9 @@ cut -f 2-
 # Display the first  lines of an input file.
 
 head -n 20
+
+# question17 ( head-02 )
+# In this challenge, we practice using the head command to display the first n characters of a text file.
+# Display the first  characters of an input file.
+
+head -c 20
