@@ -136,3 +136,9 @@ cut -d ' ' -f 0-3
 # Given a tab delimited file with several columns (tsv format) print the fields from second fields to last field.
 
 cut -f 2-
+
+# question 16
+# In this challenge, we practice using the head command to display the first n lines of a text file.
+# Display the first  lines of an input file.
+
+head -n 20
