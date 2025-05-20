@@ -1,8 +1,15 @@
+# 🐧 Linux Isn’t Mad... Just Disappointed
+
+> "After all we've been through, you still opened .exe files?"
+
+
+![Image](https://github.com/user-attachments/assets/71983153-2d3f-452e-903c-0bac61b82039)
 
 
 # Bash Input Check Script
 
 This is a simple bash script that prompts the user for input and checks if the input is either `Y` or `y`. It can be used as a basic example of conditional input handling in shell scripting.
+
 
 
 ## 📘 Basic Tool Usage
