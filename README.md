@@ -130,7 +130,4 @@ To improve your experience while editing shell scripts in VS Code:
 
 Haseeb – \[([https://github.com/haseeb2412](https://github.com/haseeb2412))]
 
-```
 
-If you want me to generate the shell script (`myscript.sh`) too, just ask!
-```
