@@ -10,75 +10,77 @@
 
 This is a simple bash script that prompts the user for input and checks if the input is either `Y` or `y`. It can be used as a basic example of conditional input handling in shell scripting.
 
-
-
 ## 📘 Basic Tool Usage
 
 ### 🔹 `head` and `tail`
-**Use when** you want the first or last few lines of a file.
-
-Examples:
+Use when you want the first or last few lines of a file.
 
 ```bash
 head -n 10 file.txt     # First 10 lines
 tail -n 5 file.txt      # Last 5 lines
+````
 
-🔹 tr ( used for translate , delete ,squeeze and replace )
+---
 
-Examples
+### 🔹 `tr`
 
-# Convert lowercase to uppercase
-echo "hello" | tr 'a-z' 'A-Z'
+Use for translate, delete, squeeze, or replace characters.
 
-# Remove digits
-echo "abc123" | tr -d '0-9'
+```bash
+echo "hello" | tr 'a-z' 'A-Z'      # Convert lowercase to uppercase
+echo "abc123" | tr -d '0-9'        # Remove digits
+echo "a     b" | tr -s ' '         # Squeeze multiple spaces into one
+```
 
-# Squeeze multiple spaces into one
-echo "a     b" | tr -s ' '
+---
 
+### 🔹 `cut`
 
+Use when you want to extract columns or characters from each line.
 
-🔹 cut
-Use when you want to extract columns or specific characters from each line.
+```bash
+cut -d',' -f2 file.csv   # Extract 2nd column from a CSV
+cut -c1-5 file.txt       # Extract first 5 characters of each line
+```
 
-Examples:
+---
 
-cut -d',' -f2 file.csv  # Extract 2nd column from a CSV
-cut -c1-5 file.txt      # Extract first 5 characters of each line
+### 🔹 `sed`
 
+Use for pattern-based text filtering or replacement.
 
-🔹 sed
-Use when you want to filter or replace text based on patterns or line numbers.
+```bash
+sed -n '12,22p' file.txt         # Show lines 12 to 22
+sed 's/old/new/g' file.txt       # Replace all occurrences of 'old' with 'new'
+```
 
-Examples:
+---
 
-sed -n '12,22p' file.txt          # Show lines 12 to 22
-sed 's/old/new/g' file.txt        # Replace all occurrences of 'old' with 'new'
+### 🔹 `sort`
 
+Used to sort lines in files alphabetically, numerically, or by column.
 
-🔹 sort Command in Linux
-The sort command is used to sort lines of text files. It supports sorting alphabetically, numerically, by specific columns, and more.
+```bash
+sort -k2 -n -r -t$'\t' file.txt
+```
 
-Common Options:
--n → Sort numerically (e.g., 2 before 10)
+* `-k2` → Sort by the second column
+* `-n` → Numeric sort
+* `-r` → Reverse (descending) order
+* `-t$'\t'` → Tab delimiter
 
--r → Sort in reverse (descending) order
+---
 
--k → Sort by a specific column/field (-k2 = second column)
+### 🔹 `awk`
 
--t → Define a custom delimiter (e.g., -t, for CSV or -t$'\t' for tab)
+Use for advanced filtering, column operations, or condition-based actions.
 
--u → Remove duplicate lines
+```bash
+awk '{print $1, $3}' file.txt         # Print 1st and 3rd columns
+awk '$2 > 100 {print $1}' file.txt    # Print 1st column if 2nd column > 100
+```
 
--o output.txt → Save sorted output to a file
-
-🔹 awk
-Use when you need advanced filtering, column selection, or condition-based processing.
-
-Examples:
-
-awk '{print $1, $3}' file.txt          # Print 1st and 3rd columns
-awk '$2 > 100 {print $1}' file.txt     # Print 1st column if 2nd column > 100
+---
 
 ## File
 
@@ -126,6 +128,9 @@ To improve your experience while editing shell scripts in VS Code:
 
 ## Author
 
-Haseeb – [(https://github.com/haseeb2412)]
+Haseeb – \[([https://github.com/haseeb2412](https://github.com/haseeb2412))]
 
+```
 
+If you want me to generate the shell script (`myscript.sh`) too, just ask!
+```
