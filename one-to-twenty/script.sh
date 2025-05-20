@@ -178,3 +178,21 @@ tr  "()" "[]"
 # In a given fragment of text, delete all the lowercase characters a-z.
 
 tr -d "a-z"
+
+# question 22 (text processing tr 03)
+# In a given fragment of text, replace all sequences of multiple spaces with just one space.
+
+tr -s "  "
+
+# question 23 (text processing sort 01)
+# In this challenge, we practice using the sort command to sort input in text or TSV formats.
+# Given a text file, order the lines in lexicographical order.
+
+sort
+
+
+# question 24 (text processing sort 02)
+# In this challenge, we practice using the sort command to sort input in text or TSV formats.
+# Given a text file, order the lines in reverse lexicographical order (i.e. Z-A instead of A-Z).
+
+sort -r
