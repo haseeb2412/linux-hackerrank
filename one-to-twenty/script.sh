@@ -155,14 +155,21 @@ head -c 20
 sed -n "12,22p"
 
 
-# question 19( text processing tail-01 )
+# question 19 ( text processing tail-01 )
 # In this challenge, we practice using the tail command to display the last  lines of a text file.
 # Display the last  lines of an input file.
 
 tail -n 20
 
-# question ( text processing tail-02 )
+# question 20 ( text processing tail-02 )
 # In this challenge, we practice using the tail command to display the last  characters of a text file.
 # Display the last  characters of an input file.
 
 tail -c 20
+
+# question 21 (text-processing tr 01)
+# In this challenge, we practice using the tr command because it is a useful translation tool in Linux.
+# In a given fragment of text, replace all parentheses   with box brackets  .
+
+echo "int i=(int)5.8
+(23 + 5)*2" | tr  "()" "[]"

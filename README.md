@@ -15,8 +15,26 @@ Examples:
 ```bash
 head -n 10 file.txt     # First 10 lines
 tail -n 5 file.txt      # Last 5 lines
+
+🔹 tr ( used for translate , delete ,squeeze and replace )
+
+Examples
+
+# Convert lowercase to uppercase
+echo "hello" | tr 'a-z' 'A-Z'
+
+# Remove digits
+echo "abc123" | tr -d '0-9'
+
+# Squeeze multiple spaces into one
+echo "a     b" | tr -s ' '
+
+
+
 🔹 cut
 Use when you want to extract columns or specific characters from each line.
+
+
 
 Examples:
 
