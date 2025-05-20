@@ -171,5 +171,10 @@ tail -c 20
 # In this challenge, we practice using the tr command because it is a useful translation tool in Linux.
 # In a given fragment of text, replace all parentheses   with box brackets  .
 
-echo "int i=(int)5.8
-(23 + 5)*2" | tr  "()" "[]"
+tr  "()" "[]"
+
+# question 21 (text processing tr 02)
+# In this challenge, we practice using the tr command because it is a useful translation tool in Linux.
+# In a given fragment of text, delete all the lowercase characters a-z.
+
+tr -d "a-z"
