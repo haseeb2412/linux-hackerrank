@@ -41,12 +41,12 @@ echo "a     b" | tr -s ' '
 🔹 cut
 Use when you want to extract columns or specific characters from each line.
 
-
-
 Examples:
 
 cut -d',' -f2 file.csv  # Extract 2nd column from a CSV
 cut -c1-5 file.txt      # Extract first 5 characters of each line
+
+
 🔹 sed
 Use when you want to filter or replace text based on patterns or line numbers.
 
@@ -54,6 +54,24 @@ Examples:
 
 sed -n '12,22p' file.txt          # Show lines 12 to 22
 sed 's/old/new/g' file.txt        # Replace all occurrences of 'old' with 'new'
+
+
+🔹 sort Command in Linux
+The sort command is used to sort lines of text files. It supports sorting alphabetically, numerically, by specific columns, and more.
+
+Common Options:
+-n → Sort numerically (e.g., 2 before 10)
+
+-r → Sort in reverse (descending) order
+
+-k → Sort by a specific column/field (-k2 = second column)
+
+-t → Define a custom delimiter (e.g., -t, for CSV or -t$'\t' for tab)
+
+-u → Remove duplicate lines
+
+-o output.txt → Save sorted output to a file
+
 🔹 awk
 Use when you need advanced filtering, column selection, or condition-based processing.
 
