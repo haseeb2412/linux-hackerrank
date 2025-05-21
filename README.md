@@ -30,7 +30,25 @@ Use for translate, delete, squeeze, or replace characters.
 echo "hello" | tr 'a-z' 'A-Z'      # Convert lowercase to uppercase
 echo "abc123" | tr -d '0-9'        # Remove digits
 echo "a     b" | tr -s ' '         # Squeeze multiple spaces into one
+
 ```
+### 🔹 `uniq`
+
+The uniq command in Linux is used to remove or display duplicate lines from a file or input. It compares adjacent lines, so it’s often used with sort.
+
+```bash
+| Flag     | Description                               |
+| -------- | ----------------------------------------- |
+| `-c`     | Prefix lines by the number of occurrences |
+| `-d`     | Show only duplicate lines                 |
+| `-u`     | Show only unique lines                    |
+| `-i`     | Ignore case when comparing lines          |
+| `-f N`   | Skip first N fields when comparing lines  |
+| `-s N`   | Skip first N characters when comparing    |
+| `--help` | Show help information                     |
+
+```
+
 
 ---
 
