@@ -105,3 +105,63 @@ fi
 
 
 cut -c 3
+
+# quesiton 10
+# Display the first four characters from each line of text.
+
+cut -c 0-4
+
+# question 11
+# /Given a tab delimited file with several columns (tsv format) print the first three fields.
+
+cut -f 1-3
+
+# question 12
+# Print the characters from thirteenth position to the end.
+
+cut -c 13-
+
+# question 13
+# Given a sentence, identify and display its fourth word. Assume that the space (' ') is the only delimiter between
+
+cut -d '' -f 4
+
+# question 14
+# Given a sentence, identify and display its first three words. Assume that the space (' ') is the only delimiter between words.
+
+cut -d ' ' -f 0-3
+
+# question 15 
+# Given a tab delimited file with several columns (tsv format) print the fields from second fields to last field.
+
+cut -f 2-
+
+# question 16
+# In this challenge, we practice using the head command to display the first n lines of a text file.
+# Display the first  lines of an input file.
+
+head -n 20
+
+# question17 ( head-02 )
+# In this challenge, we practice using the head command to display the first n characters of a text file.
+# Display the first  characters of an input file.
+
+head -c 20
+
+# question 18 ( text processing in linux the middle of the text file)
+# Display the lines (from line number 12 to 22, both inclusive) of a given text file.
+
+sed -n "12,22p"
+
+
+# question 19 ( text processing tail-01 )
+# In this challenge, we practice using the tail command to display the last  lines of a text file.
+# Display the last  lines of an input file.
+
+tail -n 20
+
+# question 20 ( text processing tail-02 )
+# In this challenge, we practice using the tail command to display the last  characters of a text file.
+# Display the last  characters of an input file.
+
+tail -c 20
