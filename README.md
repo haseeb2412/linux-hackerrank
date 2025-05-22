@@ -118,7 +118,7 @@ awk '$2 > 100 {print $1}' file.txt    # Print 1st column if 2nd column > 100
 
 ## Usage
 
-1. Make the script executable:
+1. Make the script executablee:
 
    ```bash
    chmod +x myscript.sh
