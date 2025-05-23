@@ -1,4 +1,4 @@
- 🐧 Linux Isn’t Mad... Just Disappointed
+ 🐧 Linux Isn’t Mad.... Just Disappointed
 
 > "After all we've been through, you still opened .exe files?"
 
